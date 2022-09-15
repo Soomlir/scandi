@@ -5,11 +5,17 @@
   <title>Scandi - Главная страница</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
-      <img class="logo" src="images/logo.svg" alt="Логотип Scandi">
+    <div class="container main-header-wrapper">
+      <a class="main-header__logo">
+        <!-- <span class="visually-hidden">На главную страницу</span> -->
+        <img class="logo" width="91" height="25" src="images/logo.svg" alt="Логотип Scandi">
+      </a>
       <nav class="main-nav site-nav">
         <ul class="site-nav-list">
           <li class="site-nav-list__item">
@@ -28,17 +34,17 @@
             <a href="#!" class="site-nav-list__link">Отзывы клиентов</a>
           </li>
           <li class="site-nav-list__item">
-            <a href="#!" class="site-nav-list__link">Оставить</a>
+            <a href="#!" class="site-nav-list__link">Оставить заявку</a>
           </li>
         </ul>
       </nav>
-      <a href="tel:+79818574624" class="main-header__tel">+ 7 (981) 857-46-24</a>
+      <a href="tel:+79818574624" class="main-header__tel">+7 (981) 857-46-24</a>
     </div>
-    <div class="container-narrow header-content">
-      <p class="header-content__description">Поможем сделать вашу квартиру уютнее</p>
+    <div class="container--narrow header-content">
+      <p class="header-content__description">Поможем сделать<br> вашу квартиру<br> уютнее</p>
       <p class="header-content__text">
-        Подбираем текстиль, мебель и аксессуары под ваш интерьер, 
-        находим магазины и помогаем организовать доставку 
+        Подбираем текстиль, мебель и аксессуары<br> под ваш интерьер, 
+        находим магазины<br> и помогаем организовать доставку 
       </p>
       <a href="#!" class="header-content__button">Оставить заявку</a>
     </div>

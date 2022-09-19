@@ -13,7 +13,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Monstserrat-Regular"
+    font-family: "Monstserrat-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;   
+    color: #533738;
 }
 
 ul {
@@ -30,16 +34,32 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: block;
+    box-sizing: border-box;
+}
+
 .container {
     width: 1200px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
 .container--narrow {
     width: 1036px;
-    padding: 0 7px;
-    margin: 0 auto;
 }
 
 .main-header {
@@ -76,7 +96,6 @@ a {
 }
 
 .site-nav-list__link {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 }
@@ -96,25 +115,19 @@ a {
 
 .header-content__description {
     width: 500px;
-    font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-    color: #533738;
 }
 
 .header-content__text {
     padding-top: 20px;
     width: 500px;
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #533738;
 }
 
 .header-content__button {
-    display: block;
     width: 309px;
-    height: 74px;
     margin-top: 25px;
     padding: 25px;
     font-weight: 500;
@@ -123,5 +136,80 @@ a {
     text-align: center;
     color: #533738;
     background-color: #CC8B86;
-    box-sizing: border-box;
+}
+
+/* ABOUT US */
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 65px;
+    padding-bottom: 21px;
+}
+
+.about-us__heading {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us__content {
+    width: 528px;
+    padding-left: 64px;
+}
+
+.about-us__text {
+    margin-bottom: 31px; 
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* FEATURES */
+
+.features {
+    padding-top: 86px;
+    padding-bottom: 83px;
+    background-color: #8D7370;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-list__link {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.features-list__number {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+/* OUR WORKS */
+
+.our-works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-works__item {
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.our-works__item:nth-child(even) {
+    margin-right: 0;
 }

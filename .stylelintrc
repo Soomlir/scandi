@@ -34,7 +34,6 @@
         ]
       }
     ],
-    "at-rule-no-vendor-prefix": true,
     "at-rule-property-required-list": {
       "font-face": [
         "font-weight",
@@ -170,7 +169,6 @@
     "media-feature-colon-space-before": "never",
     "media-feature-name-case": "lower",
     "media-feature-name-no-unknown": true,
-    "media-feature-name-no-vendor-prefix": true,
     "media-feature-parentheses-space-inside": "never",
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "always",
@@ -188,14 +186,6 @@
     "number-no-trailing-zeros": true,
     "property-case": "lower",
     "property-no-unknown": true,
-    "property-no-vendor-prefix": [
-      true,
-      {
-        "ignoreProperties": [
-          "/touch/"
-        ]
-      }
-    ],
     "rule-empty-line-before": [
       "always",
       {
@@ -233,7 +223,6 @@
         ]
       }
     ],
-    "selector-no-vendor-prefix": true,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": [
       true,
@@ -274,7 +263,6 @@
     "value-list-comma-newline-before": "never-multi-line",
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
-    "value-list-max-empty-lines": 0,
-    "value-no-vendor-prefix": true
+    "value-list-max-empty-lines": 0
   }
 }

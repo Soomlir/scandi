@@ -97,7 +97,7 @@
               </p>
             </a>
             <img
-              class="works-card__img"
+              class="our-works-list__img"
               src="images/our-works-1.jpg"
               alt="Наша работа - уютная гостиная"
               width="488"
@@ -105,33 +105,54 @@
           </li>
           <li class="our-works-list__item">
             <a class="our-works__link works-card" href="#!">
-              <img
-                class="works-card__img"
+              <h3 class="works-card__heading">Светлая кухня<br> 50 кв.м.</h3>
+              <p class="works-card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consectetur excepturi?
+                In ipsa aliquam praesentium cumque, consectetur incidunt eos quisquam sint autem, animi
+                dolorem provident temporibus facilis dolore cupiditate quas.
+              </p>
+            </a>
+            <img
+                class="our-works-list__img"
                 src="images/our-works-2.jpg"
                 alt="Наша работа - светлая кухня"
                 width="692"
                 height="451" />
-            </a>
           </li>
           <li class="our-works-list__item">
             <a class="our-works__link works-card" href="#!">
-              <img
-                class="works-card__img"
+              <h3 class="works-card__heading">Комната отдыха 40 кв.м.</h3>
+              <p class="works-card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consectetur excepturi?
+                In ipsa aliquam praesentium cumque, consectetur incidunt eos quisquam sint autem, animi
+                dolorem provident temporibus facilis dolore cupiditate quas.
+              </p>
+            </a>
+            <img
+                class="our-works-list__img"
                 src="images/our-works-3.jpg"
                 alt="Наша работа - комната отдыха"
                 width="692"
                 height="451" />
-            </a>
           </li>
           <li class="our-works-list__item">
             <a class="our-works__link works-card" href="#!">
-              <img
-                class="works-card__img"
+              <h3 class="works-card__heading">Тихая ванная комната 24 кв.м.</h3>
+              <p class="works-card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consectetur excepturi?
+                In ipsa aliquam praesentium cumque, consectetur incidunt eos quisquam sint autem, animi
+                dolorem provident temporibus facilis dolore cupiditate quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consectetur excepturi?
+                In ipsa aliquam praesentium cumque, consectetur incidunt eos quisquam sint autem, animi
+                dolorem provident temporibus facilis dolore cupiditate quas.
+              </p>
+            </a>
+            <img
+                class="our-works-list__img"
                 src="images/our-works-4.jpg"
                 alt="Наша работа - тихая ванная комната"
                 width="488"
                 height="451" />
-            </a>
           </li>
         </ul>
         <a class="our-works__see-more" href="#!">Смотреть ещё</a>
@@ -195,8 +216,8 @@
         </section>
       </section>
 
-      <section class="reviews container-narrow">
-        <h2 class="visually-hidden">Наша команда</h2>
+      <section class="reviews container container--narrow">
+        <h2 class="reviews__heading heading">Отзывы</h2>
         <ul class="reviews-list slider">
           <li class="reviews-list__item slider__item">
             <blockquote class="reviews-list__blockquote">
@@ -204,45 +225,55 @@
                 «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
               </p>
               <p class="reviews-list__text">
-                Работа шла быстро, было очень приятно общаться и взаимодействовать с сотрудниками. Не ожидала, что это
+                Работа шла быстро, было очень приятно общаться и взаимодействовать<br> с сотрудниками. Не ожидала, что это
                 будет так легко!
               </p>
               <p class="reviews-list__text">Буду советовать и своим друзьям к вам обращаться!»</p>
               <cite class="reviews-list__cite">Анна Беловская</cite>
             </blockquote>
-            <img
-              class="reviews-list__preview"
-              src="images/slider1-1.jpg"
-              alt="Уютная гостиная"
-              width="407"
-              height="272" />
-            <img
-              class="reviews-list__preview"
-              src="images/slider1-2.jpg"
-              alt="Прекрасная кухня"
-              width="407"
-              height="272" />
+            <div class="reviews-list__pics">
+              <img
+                class="reviews-list__preview reviews-list__preview--indent"
+                src="images/slider1-1.jpg"
+                alt="Уютная гостиная"
+                width="407"
+                height="272" />
+              <img
+                class="reviews-list__preview"
+                src="images/slider1-2.jpg"
+                alt="Прекрасная кухня"
+                width="407"
+                height="272" />
+            </div>
+            <button class="slider__btn slider__btn--prev" type="button"><span class="visually-hidden">Назад</span></button>
+            <button class="slider__btn slider__btn--next" type="button"><span class="visually-hidden">Вперед</span></button>
           </li>
         </ul>
       </section>
 
-      <section class="contact-us container">
-        <h2 class="contact-us__heading">Оставить заявку</h2>
-        <p class="contact-us__text">
-          Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
-        </p>
-        <form class="contact-form" action="echo.htmlacademy.ru" method="post">
-          <input name="name" type="text" placeholder="Ваше имя" />
-          <input name="tel" type="tel" placeholder="Введите телефон" />
-          <button class="contact-form__button" type="submit">Оставить заявку</button>
-        </form>
-        <img class="contact-us-map" src="images/map.jpg" alt="Наше местонахождение на карте" width="590" height="624" />
+      <section class="contact-us">
+        <div class="container contact-us__flex">
+          <div class="contact-us__wrapper">
+            <h2 class="contact-us__heading">Оставить заявку</h2>
+            <p class="contact-us__text">
+              Оставьте свои контакты. Менеджер перезвонит<br> в удобное вам время и ответит на все вопросы.
+            </p>
+            <form class="contact-form" action="echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input class="contact-form__input" id="name"name="name" type="text" placeholder="Ваше имя" />
+              <label class="visually-hidden" for="tel">Введите телефон</label>
+              <input class="contact-form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" />
+              <button class="contact-form__button button" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+          <img class="contact-us-map" src="images/map.jpg" alt="Наше местонахождение на карте" width="590" height="624" />
+        </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <a class="main-footer__tel" href="tel:+79818574624">+ 7 (981) 857-46-24</a>
-      <p class="main-footer__text">г. Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+    <footer class="main-footer container">
+      <a class="main-footer__tel" href="tel:+79818574624">+7 (981) 857-46-24</a>
+      <p class="main-footer__text">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
       <p class="main-footer__copyright">ИП Королёва А.А</p>
     </footer>
   </body>

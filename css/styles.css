@@ -24,6 +24,7 @@
 
 body {
   margin: 0;
+  min-width: 1240px;
   font-family: "Monstserrat", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -48,6 +49,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote {
@@ -74,7 +77,8 @@ blockquote {
 .container {
   width: 1200px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container--narrow {
@@ -163,8 +167,7 @@ blockquote {
 
 .about-us__heading {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   width: 100%;
 }
 
@@ -258,6 +261,14 @@ blockquote {
   margin: 30px 0 0 20px;
 }
 
+.our-works-list__item--accent {
+  width: 488px;
+}
+
+.our-works-list__item--alter {
+  width: 692px;
+}
+
 .our-works-list__item:hover .our-works__link,
 .our-works-list__item:focus-within .our-works__link {
   display: block;
@@ -276,8 +287,8 @@ blockquote {
 }
 
 .works-card__heading {
-  width: 280px;
   margin: 0 auto;
+  width: 280px;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 30px;
@@ -311,14 +322,13 @@ blockquote {
 }
 
 .team-list__text {
-  margin-top: 10px;
+  width: 320px;
+  margin-top: 12px;
   margin-bottom: 35px;
 }
 
 /* TEAM TIME */
 .team-time__heading {
-  display: table;
-  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -358,11 +368,6 @@ blockquote {
   padding-bottom: 40px;
 }
 
-.reviews__heading {
-  display: table;
-  margin: 0 auto;
-}
-
 .reviews-list__item {
   position: relative;
   display: flex;
@@ -372,7 +377,7 @@ blockquote {
 
 .reviews-list__blockquote {
   width: 410px;
-  padding-top: 90px;
+  padding-top: 93px;
 }
 
 .reviews-list__text {
@@ -389,7 +394,11 @@ blockquote {
 }
 
 .reviews-list__preview--indent {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+}
+
+.slider {
+  position: relative;
 }
 
 .slider__btn {
@@ -418,7 +427,7 @@ blockquote {
   background-color: #8d7370;
 }
 
-.contact-us__flex {
+.contact-us__inner {
   display: flex;
   justify-content: space-between;
 }
@@ -473,6 +482,7 @@ input::placeholder {
   border: none;
   font-family: "Montserrat Medium", "Arial", sans-serif;
   cursor: pointer;
+  background-color: #cc8b86;
 }
 
 /* FOOTER */

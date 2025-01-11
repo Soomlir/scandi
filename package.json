@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "browser-sync": "2.27.10",
+    "cross-env": "7.0.3",
+    "gulp": "4.0.2",
+    "gulp-lintspaces": "1.0.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-posthtml": "3.0.5",
+    "pineglade-config": "2.2.0",
+    "pineglade-w3c": "1.0.3",
+    "postcss-bem-linter": "3.3.0",
+    "postcss-reporter": "7.0.5",
+    "pre-commit": "1.2.2",
+    "stylelint": "14.12.0",
+    "stylelint-config-prettier": "9.0.3"
+  },
+  "name": "scandi-soomlir",
+  "pre-commit": "lint",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "lint": "cross-env NODE_ENV=production gulp lint"
+  },
+  "type": "module"
+}

@@ -7,4 +7,4 @@
 * css
 * javascript
 
-[Опубликованая версия](https://soomlir.github.io/scandi/)
+[Опубликованная версия](https://soomlir.github.io/scandi/)
